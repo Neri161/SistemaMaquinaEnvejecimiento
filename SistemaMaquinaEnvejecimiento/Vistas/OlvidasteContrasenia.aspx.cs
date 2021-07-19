@@ -16,6 +16,11 @@ namespace SistemaMaquinaEnvejecimiento.Vistas
         herramienta herramientas = new herramienta();
         protected void Page_Load(object sender, EventArgs e)
         {
+            
+        }
+
+        protected void btnRecuperar_Click(object sender, EventArgs e)
+        {
             Usuario usuario = new Usuario
             {
                 Email = email.Text.ToString()
@@ -26,11 +31,6 @@ namespace SistemaMaquinaEnvejecimiento.Vistas
             String respuesta = peticion.ObtenerJson();
             Reply consulta = JsonConvertidor.Json_Objeto<Reply>(respuesta);
             Response.Write("<script>alert('" + consulta.message + "');</script>");
-        }
-
-        protected void btnRecuperar_Click(object sender, EventArgs e)
-        {
-
         }
 
         protected void btnRegresar_Click(object sender, EventArgs e)
