@@ -43,6 +43,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HTTPupt">
+      <HintPath>D:\Librerias\Visual c#\HTTPupt.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Web.DynamicData" />
@@ -81,17 +84,124 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="public\bootstrap4\css\bootstrap-grid.css" />
+    <Content Include="public\bootstrap4\css\bootstrap-grid.min.css" />
+    <Content Include="public\bootstrap4\css\bootstrap-reboot.css" />
+    <Content Include="public\bootstrap4\css\bootstrap-reboot.min.css" />
+    <Content Include="public\bootstrap4\css\bootstrap.css" />
+    <Content Include="public\bootstrap4\css\bootstrap.min.css" />
+    <Content Include="public\bootstrap4\js\bootstrap.bundle.js" />
+    <Content Include="public\bootstrap4\js\bootstrap.bundle.min.js" />
+    <Content Include="public\bootstrap4\js\bootstrap.js" />
+    <Content Include="public\bootstrap4\js\bootstrap.min.js" />
+    <Content Include="public\css\bootstrap4.min.css" />
+    <Content Include="public\css\bsadmin.css" />
+    <Content Include="public\css\fontawesome.min.css" />
+    <Content Include="public\css\Style.css" />
+    <Content Include="public\img\logo.png" />
+    <Content Include="public\js\bsadmin.js" />
+    <Content Include="public\js\codigo.js" />
+    <Content Include="public\js\jquery.min.js" />
+    <Content Include="public\js\popper.min.js" />
+    <Content Include="public\js\popper2.min.js" />
+    <Content Include="public\js\verificacion.js" />
+    <Content Include="public\js\verificacion2.js" />
+    <Content Include="public\js\verificacion3.js" />
+    <Content Include="public\js\verificacion4.js" />
+    <Content Include="public\plugins\animate.css\animate.css" />
+    <Content Include="public\plugins\sweetAlert2\sweetalert2.all.min.js" />
+    <Content Include="public\plugins\sweetAlert2\sweetalert2.min.css" />
+    <Content Include="public\webfonts\fa-brands-400.svg" />
+    <Content Include="public\webfonts\fa-regular-400.svg" />
+    <Content Include="public\webfonts\fa-solid-900.svg" />
+    <Content Include="Vistas\CambioContraseña.aspx" />
+    <Content Include="Vistas\Inicio.aspx" />
+    <Content Include="Vistas\Login.aspx" />
+    <Content Include="Vistas\OlvidasteContrasenia.aspx" />
+    <Content Include="Vistas\Register.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Herramientas\herramienta.cs" />
+    <Compile Include="Models\Medicion.cs" />
+    <Compile Include="Models\Prueba.cs" />
+    <Compile Include="Models\Reply.cs" />
+    <Compile Include="Models\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vistas\CambioContraseña.aspx.cs">
+      <DependentUpon>CambioContraseña.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\CambioContraseña.aspx.designer.cs">
+      <DependentUpon>CambioContraseña.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Inicio.aspx.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Inicio.aspx.designer.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\MasterPage\SideBar.Master.cs">
+      <DependentUpon>SideBar.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\MasterPage\SideBar.Master.designer.cs">
+      <DependentUpon>SideBar.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\OlvidasteContrasenia.aspx.cs">
+      <DependentUpon>OlvidasteContrasenia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\OlvidasteContrasenia.aspx.designer.cs">
+      <DependentUpon>OlvidasteContrasenia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="public\bootstrap4\css\.DS_Store" />
+    <Content Include="public\bootstrap4\css\bootstrap-grid.css.map" />
+    <Content Include="public\bootstrap4\css\bootstrap-grid.min.css.map" />
+    <Content Include="public\bootstrap4\css\bootstrap-reboot.css.map" />
+    <Content Include="public\bootstrap4\css\bootstrap-reboot.min.css.map" />
+    <Content Include="public\bootstrap4\css\bootstrap.css.map" />
+    <Content Include="public\bootstrap4\css\bootstrap.min.css.map" />
+    <Content Include="public\bootstrap4\js\bootstrap.bundle.js.map" />
+    <Content Include="public\bootstrap4\js\bootstrap.bundle.min.js.map" />
+    <Content Include="public\bootstrap4\js\bootstrap.js.map" />
+    <Content Include="public\bootstrap4\js\bootstrap.min.js.map" />
+    <Content Include="public\webfonts\fa-brands-400.eot" />
+    <Content Include="public\webfonts\fa-brands-400.ttf" />
+    <Content Include="public\webfonts\fa-brands-400.woff" />
+    <Content Include="public\webfonts\fa-brands-400.woff2" />
+    <Content Include="public\webfonts\fa-regular-400.eot" />
+    <Content Include="public\webfonts\fa-regular-400.ttf" />
+    <Content Include="public\webfonts\fa-regular-400.woff" />
+    <Content Include="public\webfonts\fa-regular-400.woff2" />
+    <Content Include="public\webfonts\fa-solid-900.eot" />
+    <Content Include="public\webfonts\fa-solid-900.ttf" />
+    <Content Include="public\webfonts\fa-solid-900.woff" />
+    <Content Include="public\webfonts\fa-solid-900.woff2" />
+    <Content Include="Vistas\MasterPage\SideBar.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -101,8 +211,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
