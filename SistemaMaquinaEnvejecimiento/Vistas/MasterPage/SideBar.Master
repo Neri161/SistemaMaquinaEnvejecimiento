@@ -2,24 +2,25 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 <head runat="server">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Sistema Maquina de Envejecimiento</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Sistema Maquina de Envejecimiento</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../public/bootstrap4/css/bootstrap.min.css">
-    <link href="../public/css/bootstrap4.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../public/bootstrap4/css/bootstrap.min.css">
+    <link href="../../public/css/bootstrap4.min.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="../public/plugins/sweetAlert2/sweetalert2.min.css">
+    <link rel="stylesheet" href="../../public/plugins/sweetAlert2/sweetalert2.min.css">
 
-    <link rel="stylesheet" href="../public/plugins/animate.css/animate.css">
+    <link rel="stylesheet" href="../../public/plugins/animate.css/animate.css">
 
-    <link href="../public/css/fontawesome.min.css" rel="stylesheet" />
+    <link href="../../public/css/fontawesome.min.css" rel="stylesheet" />
 
     <link href="../../public/css/bsadmin.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
+        
     </asp:ContentPlaceHolder>
 </head>
 <body>

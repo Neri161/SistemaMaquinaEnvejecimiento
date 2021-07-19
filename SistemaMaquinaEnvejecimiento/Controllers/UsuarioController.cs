@@ -150,6 +150,7 @@ namespace SistemaMaquinaEnvejecimiento.Controllers
                         rp.result = 1;
                         rp.message = "Contraseña Cambiada";
                         usuarioObtenido.Token_recovery = "";
+                        usuarioObtenido.Date_update = DateTime.Now;
                         conectar.Entry(usuarioObtenido).State = System.Data.Entity.EntityState.Modified;
                         conectar.SaveChanges();
                         return rp;

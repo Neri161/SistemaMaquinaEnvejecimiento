@@ -28,7 +28,8 @@ namespace SistemaMaquinaEnvejecimiento.Vistas
                 ApellidoMaterno = materno.Text.ToString(),
                 Email = email.Text.ToString(),
                 Contrasenia = herramientas.GetSHA256(pass1.Text.ToString()),
-                Date_created = DateTime.Now
+                Date_created = DateTime.Now,
+                Date_update = DateTime.Now
             };
             String enviar = JsonConvertidor.Objeto_Json(usuario);
             peticion.PedirComunicacion("Usuario/RegistrarUsuario", MetodoHTTP.POST, TipoContenido.JSON);
