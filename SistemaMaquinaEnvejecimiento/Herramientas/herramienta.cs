@@ -6,7 +6,7 @@ using System.Security.Cryptography;
 using System.Text;
 
 
-namespace MaquinaEnvejecimiento.Herramientas
+namespace SistemaMaquinaEnvejecimiento.Herramientas
 {
     public class herramienta
     {
