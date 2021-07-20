@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SistemaMaquinaEnvejecimiento.Herramientas;
+using SistemaMaquinaEnvejecimiento.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -9,5 +11,37 @@ namespace SistemaMaquinaEnvejecimiento.Controllers
 {
     public class SensorController : ApiController
     {
+
+        String urlDomain = "http://localhost:54053";
+        herramienta herramientas = new herramienta();
+        [ActionName("RegistrarMedicion")]
+        [HttpPost]
+        public Reply registro(Medicion objeto)
+        {
+            using (DB db = new DB())
+            {
+                Medicion medicion = new Medicion();
+                Reply rp = new Reply();
+                try
+                {
+                    medicion.Temperatura = objeto.Temperatura;
+                    medicion.Humedad = objeto.Humedad;
+                    medicion.EstatusLuz = objeto.EstatusLuz;
+                    medicion.CicloTrabajo = objeto.CicloTrabajo;
+                    medicion.Fecha = DateTime.Now;
+                    medicion.PruebaID = objeto.PruebaID;
+                    db.Medicion.Add(objeto);
+                    db.SaveChanges();                  
+                }
+                catch (Exception ex)
+                {
+                    rp.result = 0;
+                    rp.message = "Error";
+                }
+                return rp;
+            }
+        }
+
+
     }
 }
