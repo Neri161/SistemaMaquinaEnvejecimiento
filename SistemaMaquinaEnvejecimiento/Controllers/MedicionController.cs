@@ -9,7 +9,7 @@ using System.Web.Http;
 
 namespace SistemaMaquinaEnvejecimiento.Controllers
 {
-    public class SensorController : ApiController
+    public class MedicionController : ApiController
     {
 
         String urlDomain = "http://localhost:54053";
@@ -28,9 +28,9 @@ namespace SistemaMaquinaEnvejecimiento.Controllers
                     medicion.Humedad = objeto.Humedad;
                     medicion.EstatusLuz = objeto.EstatusLuz;
                     medicion.CicloTrabajo = objeto.CicloTrabajo;
-                    medicion.Fecha = DateTime.Now;
+                    medicion.Fecha = herramientas.convertirEpoch(DateTime.Now);
                     medicion.PruebaID = objeto.PruebaID;
-                    db.Medicion.Add(objeto);
+                    db.Medicion.Add(medicion);
                     db.SaveChanges();                  
                 }
                 catch (Exception ex)

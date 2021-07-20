@@ -11,7 +11,7 @@
         <div class="form-row">
             <div class="col">
                 <asp:Label ID="lblFechaInicio" runat="server" Text="Fecha De Inicio"></asp:Label>
-                <asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
+                <asp:Calendar runat="server"></asp:Calendar>
             </div>
             <div class="col">
                 <asp:Label ID="lblFechaTermino" runat="server" Text="Fecha De Termino"></asp:Label>

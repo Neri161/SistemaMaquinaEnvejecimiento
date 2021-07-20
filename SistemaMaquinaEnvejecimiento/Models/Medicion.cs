@@ -12,7 +12,7 @@ namespace SistemaMaquinaEnvejecimiento.Models
         public float Humedad { get; set; }
         public Boolean EstatusLuz { get; set; }
         public String CicloTrabajo { get; set; }
-        public DateTime Fecha { get; set; }
+        public int Fecha { get; set; }
         public int PruebaID { get; set; }
     }
 }
