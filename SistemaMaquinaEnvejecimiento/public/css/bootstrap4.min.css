@@ -2036,7 +2036,9 @@ textarea.form-control {
 }
 
 .form-group {
-    margin-bottom: 1rem
+    margin-bottom: 1rem;
+    width: 904px;
+    margin-right: 389px;
 }
 
 .form-text {
