@@ -50,7 +50,7 @@
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="HTTPupt">
-      <HintPath>D:\Librerias\Visual c#\HTTPupt.dll</HintPath>
+      <HintPath>..\..\..\..\Librerias\Librerias c#\HTTPupt.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Net.Http" />
@@ -131,14 +131,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\SensorController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Herramientas\herramienta.cs" />
-    <Compile Include="Migrations\202107191839116_migracion1.cs" />
-    <Compile Include="Migrations\202107191839116_migracion1.Designer.cs">
-      <DependentUpon>202107191839116_migracion1.cs</DependentUpon>
+    <Compile Include="Migrations\202107192043542_migracion1.cs" />
+    <Compile Include="Migrations\202107192043542_migracion1.Designer.cs">
+      <DependentUpon>202107192043542_migracion1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\DB.cs" />
@@ -227,8 +228,8 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202107191839116_migracion1.resx">
-      <DependentUpon>202107191839116_migracion1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202107192043542_migracion1.resx">
+      <DependentUpon>202107192043542_migracion1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
