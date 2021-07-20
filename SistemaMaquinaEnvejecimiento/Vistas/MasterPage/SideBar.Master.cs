@@ -13,5 +13,20 @@ namespace SistemaMaquinaEnvejecimiento.Vistas.MasterPage
         {
 
         }
+
+        protected void btnInicioPrueba_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("IniciarPrueba.aspx");
+        }
+
+        protected void btnHistorialPruebas_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btnInicio_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Inicio.aspx");
+        }
     }
 }

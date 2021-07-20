@@ -123,6 +123,7 @@
     <Content Include="public\webfonts\fa-regular-400.svg" />
     <Content Include="public\webfonts\fa-solid-900.svg" />
     <Content Include="Vistas\CambioContraseña.aspx" />
+    <Content Include="Vistas\IniciarPrueba.aspx" />
     <Content Include="Vistas\Inicio.aspx" />
     <Content Include="Vistas\Login.aspx" />
     <Content Include="Vistas\OlvidasteContrasenia.aspx" />
@@ -154,6 +155,13 @@
     </Compile>
     <Compile Include="Vistas\CambioContraseña.aspx.designer.cs">
       <DependentUpon>CambioContraseña.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\IniciarPrueba.aspx.cs">
+      <DependentUpon>IniciarPrueba.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\IniciarPrueba.aspx.designer.cs">
+      <DependentUpon>IniciarPrueba.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vistas\Inicio.aspx.cs">
       <DependentUpon>Inicio.aspx</DependentUpon>
