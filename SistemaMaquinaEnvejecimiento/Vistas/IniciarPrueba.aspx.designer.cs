@@ -24,13 +24,13 @@ namespace SistemaMaquinaEnvejecimiento.Vistas
         protected global::System.Web.UI.WebControls.Label lblMaterial;
 
         /// <summary>
-        /// Control material.
+        /// Control txtMaterial.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox material;
+        protected global::System.Web.UI.WebControls.TextBox txtMaterial;
 
         /// <summary>
         /// Control lblFechaInicio.
@@ -42,6 +42,15 @@ namespace SistemaMaquinaEnvejecimiento.Vistas
         protected global::System.Web.UI.WebControls.Label lblFechaInicio;
 
         /// <summary>
+        /// Control CalendarInicio.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Calendar CalendarInicio;
+
+        /// <summary>
         /// Control lblFechaTermino.
         /// </summary>
         /// <remarks>
@@ -51,12 +60,21 @@ namespace SistemaMaquinaEnvejecimiento.Vistas
         protected global::System.Web.UI.WebControls.Label lblFechaTermino;
 
         /// <summary>
-        /// Control Calendar2.
+        /// Control CalendarFin.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar Calendar2;
+        protected global::System.Web.UI.WebControls.Calendar CalendarFin;
+
+        /// <summary>
+        /// Control btnIniciar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnIniciar;
     }
 }
