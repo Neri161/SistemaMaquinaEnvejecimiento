@@ -16,7 +16,10 @@ namespace SistemaMaquinaEnvejecimiento.Vistas
         herramienta herramientas = new herramienta();
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            if (Session["ID"] != null)
+            {
+                Response.Redirect("Inicio.aspx");
+            }
         }
 
         protected void btnRecuperar_Click(object sender, EventArgs e)

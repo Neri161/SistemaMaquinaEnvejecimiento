@@ -106,6 +106,7 @@
     <Content Include="public\css\bsadmin.css" />
     <Content Include="public\css\fontawesome.min.css" />
     <Content Include="public\css\Style.css" />
+    <Content Include="public\img\Iconos\logo.ico" />
     <Content Include="public\img\logo.png" />
     <Content Include="public\js\bsadmin.js" />
     <Content Include="public\js\codigo.js" />
@@ -139,9 +140,9 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Herramientas\herramienta.cs" />
-    <Compile Include="Migrations\202107192043542_migracion1.cs" />
-    <Compile Include="Migrations\202107192043542_migracion1.Designer.cs">
-      <DependentUpon>202107192043542_migracion1.cs</DependentUpon>
+    <Compile Include="Migrations\202107220431046_migracion1.cs" />
+    <Compile Include="Migrations\202107220431046_migracion1.Designer.cs">
+      <DependentUpon>202107220431046_migracion1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\DB.cs" />
@@ -237,8 +238,8 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202107192043542_migracion1.resx">
-      <DependentUpon>202107192043542_migracion1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202107220431046_migracion1.resx">
+      <DependentUpon>202107220431046_migracion1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

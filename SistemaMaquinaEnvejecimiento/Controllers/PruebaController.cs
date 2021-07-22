@@ -20,7 +20,7 @@ namespace SistemaMaquinaEnvejecimiento.Controllers
                 try
                 {
                     db.Prueba.Add(objeto);
-                    db.SaveChangesAsync();
+                    db.SaveChanges();
                     rp.result = 1;
                     rp.message = "Prueba Registrada";
                     return rp;

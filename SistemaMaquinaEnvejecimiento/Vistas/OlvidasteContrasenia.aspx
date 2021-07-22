@@ -4,8 +4,10 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Sistema Maquina De Envejecimiento</title>
+    <title>Sistema Maquina De Envejecimiento Acelerado</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../public/bootstrap4/css/bootstrap.min.css">
 
@@ -14,6 +16,7 @@
     <link rel="stylesheet" href="../public/plugins/animate.css/animate.css">
 
     <link href="../public/css/Style.css" rel="stylesheet" />
+    <link href="../public/img/Iconos/logo.ico" rel="icon" />
 </head>
 <body>
     <section class="container">

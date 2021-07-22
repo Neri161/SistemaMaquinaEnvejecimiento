@@ -10,5 +10,6 @@ namespace SistemaMaquinaEnvejecimiento.Models
         public int result { get; set; }
         public object data { get; set; }
         public String message { get; set; }
+        public int ID { get; set; }
     }
 }

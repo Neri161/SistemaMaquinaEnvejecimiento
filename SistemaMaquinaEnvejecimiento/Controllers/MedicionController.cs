@@ -29,7 +29,7 @@ namespace SistemaMaquinaEnvejecimiento.Controllers
                     medicion.EstatusLuz = objeto.EstatusLuz;
                     medicion.CicloTrabajo = objeto.CicloTrabajo;
                     medicion.Fecha = herramientas.convertirEpoch(DateTime.Now);
-                    medicion.PruebaID = objeto.PruebaID;
+                    medicion.IdPrueba = objeto.IdPrueba;
                     db.Medicion.Add(medicion);
                     db.SaveChanges();                  
                 }

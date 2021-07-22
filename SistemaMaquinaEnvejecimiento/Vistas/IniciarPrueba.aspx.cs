@@ -26,7 +26,8 @@ namespace SistemaMaquinaEnvejecimiento.Vistas
                 Material = txtMaterial.Text.ToString(),
                 FechaInicio = herramientas.convertirEpoch(CalendarInicio.SelectedDate),
                 FechaTermino = herramientas.convertirEpoch(CalendarFin.SelectedDate),
-                UsuarioID = 2
+                Privacidad = ddlPrivacidad.SelectedValue,
+                IdUsuario = 1
             };
             String enviar = JsonConvertidor.Objeto_Json(prueba);
             peticion.PedirComunicacion("Prueba/RegistroPrueba", MetodoHTTP.POST, TipoContenido.JSON);

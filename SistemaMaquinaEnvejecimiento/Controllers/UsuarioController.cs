@@ -66,6 +66,7 @@ namespace SistemaMaquinaEnvejecimiento.Controllers
                             rp.result = 1;
                             rp.data = Guid.NewGuid().ToString();
                             rp.message = "BIENVENIDOO";
+                            rp.ID = usuarioObtenido.IdUsuario;
                             usuarioObtenido.Token_ = (String)rp.data;
                             conectar.Entry(usuarioObtenido).State = System.Data.Entity.EntityState.Modified;
                             conectar.SaveChanges();
@@ -150,7 +151,7 @@ namespace SistemaMaquinaEnvejecimiento.Controllers
                         rp.result = 1;
                         rp.message = "Contraseña Cambiada";
                         usuarioObtenido.Token_recovery = "";
-                        usuarioObtenido.Date_update = DateTime.Now;
+                        usuarioObtenido.Date_update = herramientas.convertirEpoch(DateTime.Now);
                         conectar.Entry(usuarioObtenido).State = System.Data.Entity.EntityState.Modified;
                         conectar.SaveChanges();
                         return rp;
@@ -171,7 +172,30 @@ namespace SistemaMaquinaEnvejecimiento.Controllers
             }
 
         }
+        [ActionName("Consulta")]
+        [HttpPost]
+        public Usuario Consulta(Usuario objeto)
+        {
+            using (DB conectar = new DB())
+            {
+                try
+                {
+                    Usuario usuarioObtenido = conectar.Usuario.Where(x => x.IdUsuario == objeto.IdUsuario).First();
+                    if (usuarioObtenido.IdUsuario == objeto.IdUsuario)
+                    {
+                        return usuarioObtenido;
+                    }
+                    else {
+                        return objeto;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    return objeto;
+                }
+            }
 
+        }
         private void SendEmail(string EmailDestino, string token)
         {
             String EmailOrigen = "neriesperon2001@gmail.com";

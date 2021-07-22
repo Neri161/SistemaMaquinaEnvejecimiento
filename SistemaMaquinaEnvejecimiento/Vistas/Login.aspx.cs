@@ -16,7 +16,10 @@ namespace SistemaMaquinaEnvejecimiento.Vistas
         herramienta herramientas = new herramienta();
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["ID"] != null)
+            {
+                Response.Redirect("Inicio.aspx");
+            }
         }
 
         protected void btnIngresar_Click(object sender, EventArgs e)
@@ -34,10 +37,12 @@ namespace SistemaMaquinaEnvejecimiento.Vistas
 
             if (consulta.result == 0)
             {
+                
                 Response.Write("<script>alert('" + consulta.message + "');</script>");
             }
             else
             {
+                Session["ID"] = consulta.ID;
                 Response.Redirect("Inicio.aspx");
             }
         }

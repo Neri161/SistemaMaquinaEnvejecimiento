@@ -9,7 +9,7 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Registro | SME</title>
+    <title>Registro | SMEA</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../public/bootstrap4/css/bootstrap.min.css">
 
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="../public/plugins/animate.css/animate.css">
 
     <link href="../public/css/Style.css" rel="stylesheet" />
-
+    <link href="../public/img/Iconos/logo.ico" rel="icon" />
 </head>
 <body>
     <section class="container">

@@ -8,7 +8,7 @@ namespace SistemaMaquinaEnvejecimiento.Models
     public partial class DB : DbContext
     {
         public DB()
-            : base("name=DB3")
+            : base("name=DB4")
         {
         }
 
@@ -16,7 +16,6 @@ namespace SistemaMaquinaEnvejecimiento.Models
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
         }
-
         public virtual DbSet<Usuario> Usuario { get; set; }
         public virtual DbSet<Medicion> Medicion { get; set; }
         public virtual DbSet<Prueba> Prueba { get; set; }

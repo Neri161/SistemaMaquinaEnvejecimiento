@@ -18,6 +18,10 @@ namespace SistemaMaquinaEnvejecimiento.Vistas
         protected void Page_Load(object sender, EventArgs e)
         {
             lblToken.Text = Request.QueryString["token"].ToString();
+            if (Session["ID"] != null)
+            {
+                Response.Redirect("Inicio.aspx");
+            }
         }
         protected void btnCambiar_Click(object sender, EventArgs e)
         {

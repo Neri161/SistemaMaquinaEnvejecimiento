@@ -69,6 +69,24 @@ namespace SistemaMaquinaEnvejecimiento.Vistas
         protected global::System.Web.UI.WebControls.Calendar CalendarFin;
 
         /// <summary>
+        /// Control lblPrivacidad.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblPrivacidad;
+
+        /// <summary>
+        /// Control ddlPrivacidad.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlPrivacidad;
+
+        /// <summary>
         /// Control btnIniciar.
         /// </summary>
         /// <remarks>

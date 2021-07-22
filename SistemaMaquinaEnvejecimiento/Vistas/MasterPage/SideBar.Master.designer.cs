@@ -42,13 +42,22 @@ namespace SistemaMaquinaEnvejecimiento.Vistas.MasterPage
         protected global::System.Web.UI.WebControls.LinkButton btnInicio;
 
         /// <summary>
-        /// Control User.
+        /// Control lblCorreo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label User;
+        protected global::System.Web.UI.WebControls.Label lblCorreo;
+
+        /// <summary>
+        /// Control lbCerrar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lbCerrar;
 
         /// <summary>
         /// Control btnInicioPrueba.
