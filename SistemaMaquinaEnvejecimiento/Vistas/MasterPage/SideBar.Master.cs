@@ -43,7 +43,7 @@ namespace SistemaMaquinaEnvejecimiento.Vistas.MasterPage
 
         protected void btnHistorialPruebas_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("HistorialPruebas.aspx");
         }
 
         protected void btnInicio_Click(object sender, EventArgs e)
@@ -54,6 +54,11 @@ namespace SistemaMaquinaEnvejecimiento.Vistas.MasterPage
         {
             Session.RemoveAll();
             Response.Redirect("Login.aspx");
+        }
+
+        protected void btnPruebasPublicas_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("PruebasPublicas.aspx");
         }
     }
 }

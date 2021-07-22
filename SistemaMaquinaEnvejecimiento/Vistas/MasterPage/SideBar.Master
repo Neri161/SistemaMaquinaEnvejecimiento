@@ -26,7 +26,7 @@
     <form id="form1" runat="server">
         <nav class="navbar navbar-expand navbar-light bg-light border" style="border-color: rgb(240,240,240);">
             <a class="sidebar-toggle text-dark mr-3"><i class="fa fa-bars"></i></a>
-            <asp:LinkButton Text="SISTEMA DE MAQUINA DE ENVEJECIMIENTO ACELERADO" ID="btnInicio" Style="text-decoration:none; color:black;" runat="server" OnClick="btnInicio_Click" />
+            <asp:LinkButton Text="SISTEMA DE MAQUINA DE ENVEJECIMIENTO ACELERADO" ID="btnInicio" Style="text-decoration: none; color: black;" runat="server" OnClick="btnInicio_Click" />
             <div class="navbar-collapse collapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item dropdown">
@@ -48,8 +48,10 @@
                     <li>
                         <asp:LinkButton ID="btnInicioPrueba" Text="<i class='fa fa-fw fa-link'></i> Iniciar Prueba" runat="server" OnClick="btnInicioPrueba_Click" /></li>
                     <li>
-                        <asp:LinkButton ID="btnHistorialPruebas" Text="<i class='fa fa-fw fa-link'></i> Historial De Pruebas" runat="server" OnClick="btnHistorialPruebas_Click" /></li>
-                    
+                        <asp:LinkButton ID="btnHistorialPruebas" Text="<i class='fa fa-fw fa-link'></i> Mis Pruebas" runat="server" OnClick="btnHistorialPruebas_Click" /></li>
+                    <li>
+                        <asp:LinkButton ID="btnPruebasPublicas" Text="<i class='fa fa-fw fa-link'></i> Pruebas Publicas" runat="server" OnClick="btnPruebasPublicas_Click" /></li>
+
                     <!--<li>
                     <a href="#submenu1" data-toggle="collapse"><i class="fa fa-fw fa-address-card"></i>Dropdown Link</a>
                     <ul id="submenu1" class="list-unstyled collapse">

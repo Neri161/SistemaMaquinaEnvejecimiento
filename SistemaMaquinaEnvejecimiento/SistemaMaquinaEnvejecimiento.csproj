@@ -124,10 +124,12 @@
     <Content Include="public\webfonts\fa-regular-400.svg" />
     <Content Include="public\webfonts\fa-solid-900.svg" />
     <Content Include="Vistas\CambioContraseña.aspx" />
+    <Content Include="Vistas\HistorialPruebas.aspx" />
     <Content Include="Vistas\IniciarPrueba.aspx" />
     <Content Include="Vistas\Inicio.aspx" />
     <Content Include="Vistas\Login.aspx" />
     <Content Include="Vistas\OlvidasteContrasenia.aspx" />
+    <Content Include="Vistas\PruebasPublicas.aspx" />
     <Content Include="Vistas\Register.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -144,6 +146,10 @@
     <Compile Include="Migrations\202107220431046_migracion1.Designer.cs">
       <DependentUpon>202107220431046_migracion1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202107221801364_migracion11.cs" />
+    <Compile Include="Migrations\202107221801364_migracion11.Designer.cs">
+      <DependentUpon>202107221801364_migracion11.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\DB.cs" />
     <Compile Include="Models\Medicion.cs" />
@@ -157,6 +163,13 @@
     </Compile>
     <Compile Include="Vistas\CambioContraseña.aspx.designer.cs">
       <DependentUpon>CambioContraseña.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\HistorialPruebas.aspx.cs">
+      <DependentUpon>HistorialPruebas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\HistorialPruebas.aspx.designer.cs">
+      <DependentUpon>HistorialPruebas.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vistas\IniciarPrueba.aspx.cs">
       <DependentUpon>IniciarPrueba.aspx</DependentUpon>
@@ -192,6 +205,13 @@
     </Compile>
     <Compile Include="Vistas\OlvidasteContrasenia.aspx.designer.cs">
       <DependentUpon>OlvidasteContrasenia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\PruebasPublicas.aspx.cs">
+      <DependentUpon>PruebasPublicas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\PruebasPublicas.aspx.designer.cs">
+      <DependentUpon>PruebasPublicas.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vistas\Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
@@ -240,6 +260,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202107220431046_migracion1.resx">
       <DependentUpon>202107220431046_migracion1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107221801364_migracion11.resx">
+      <DependentUpon>202107221801364_migracion11.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

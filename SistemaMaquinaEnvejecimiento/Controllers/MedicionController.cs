@@ -20,18 +20,17 @@ namespace SistemaMaquinaEnvejecimiento.Controllers
         {
             using (DB db = new DB())
             {
-                Medicion medicion = new Medicion();
                 Reply rp = new Reply();
                 try
                 {
-                    medicion.Temperatura = objeto.Temperatura;
-                    medicion.Humedad = objeto.Humedad;
-                    medicion.EstatusLuz = objeto.EstatusLuz;
-                    medicion.CicloTrabajo = objeto.CicloTrabajo;
-                    medicion.Fecha = herramientas.convertirEpoch(DateTime.Now);
-                    medicion.IdPrueba = objeto.IdPrueba;
-                    db.Medicion.Add(medicion);
-                    db.SaveChanges();                  
+
+                    for (int i = 0; i < 10; i++)
+                    {
+                        db.Medicion.Add(objeto);
+                        db.SaveChanges();
+                    }
+                    rp.result = 1;
+                    rp.message = "Registrado";
                 }
                 catch (Exception ex)
                 {
