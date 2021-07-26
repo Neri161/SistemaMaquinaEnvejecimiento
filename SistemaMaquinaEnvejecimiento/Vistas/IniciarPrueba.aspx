@@ -14,10 +14,11 @@
                 border: rgb(255,159,57);
                 color: azure;
             }
+
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="container border" style="margin: 10px;">
+    <div class="container border col-12" style="margin: 10px;">
         <div class="form-row">
             <asp:Label Text="Nombre Material" ID="lblMaterial" runat="server" />
             <asp:TextBox ID="txtMaterial" CssClass="form-control" runat="server" />

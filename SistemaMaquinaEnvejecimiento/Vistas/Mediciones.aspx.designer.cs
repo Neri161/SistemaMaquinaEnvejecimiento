@@ -11,16 +11,16 @@ namespace SistemaMaquinaEnvejecimiento.Vistas
 {
 
 
-    public partial class HistorialPruebas
+    public partial class Mediciones
     {
 
         /// <summary>
-        /// Control gvPrueba.
+        /// Control gvMedicion.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvPrueba;
+        protected global::System.Web.UI.WebControls.GridView gvMedicion;
     }
 }

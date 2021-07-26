@@ -105,14 +105,17 @@
     <Content Include="public\css\bootstrap4.min.css" />
     <Content Include="public\css\bsadmin.css" />
     <Content Include="public\css\fontawesome.min.css" />
+    <Content Include="public\css\jquery.dataTables.min.css" />
     <Content Include="public\css\Style.css" />
     <Content Include="public\img\Iconos\logo.ico" />
     <Content Include="public\img\logo.png" />
     <Content Include="public\js\bsadmin.js" />
     <Content Include="public\js\codigo.js" />
+    <Content Include="public\js\jquery.dataTables.min.js" />
     <Content Include="public\js\jquery.min.js" />
     <Content Include="public\js\popper.min.js" />
     <Content Include="public\js\popper2.min.js" />
+    <Content Include="public\js\pruebasTablas.js" />
     <Content Include="public\js\verificacion.js" />
     <Content Include="public\js\verificacion2.js" />
     <Content Include="public\js\verificacion3.js" />
@@ -128,6 +131,7 @@
     <Content Include="Vistas\IniciarPrueba.aspx" />
     <Content Include="Vistas\Inicio.aspx" />
     <Content Include="Vistas\Login.aspx" />
+    <Content Include="Vistas\Mediciones.aspx" />
     <Content Include="Vistas\OlvidasteContrasenia.aspx" />
     <Content Include="Vistas\PruebasPublicas.aspx" />
     <Content Include="Vistas\Register.aspx" />
@@ -142,13 +146,9 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Herramientas\herramienta.cs" />
-    <Compile Include="Migrations\202107220431046_migracion1.cs" />
-    <Compile Include="Migrations\202107220431046_migracion1.Designer.cs">
-      <DependentUpon>202107220431046_migracion1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202107221801364_migracion11.cs" />
-    <Compile Include="Migrations\202107221801364_migracion11.Designer.cs">
-      <DependentUpon>202107221801364_migracion11.cs</DependentUpon>
+    <Compile Include="Migrations\202107260119031_migracion1.cs" />
+    <Compile Include="Migrations\202107260119031_migracion1.Designer.cs">
+      <DependentUpon>202107260119031_migracion1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\DB.cs" />
@@ -198,6 +198,13 @@
     </Compile>
     <Compile Include="Vistas\MasterPage\SideBar.Master.designer.cs">
       <DependentUpon>SideBar.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Mediciones.aspx.cs">
+      <DependentUpon>Mediciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Mediciones.aspx.designer.cs">
+      <DependentUpon>Mediciones.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vistas\OlvidasteContrasenia.aspx.cs">
       <DependentUpon>OlvidasteContrasenia.aspx</DependentUpon>
@@ -258,11 +265,8 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202107220431046_migracion1.resx">
-      <DependentUpon>202107220431046_migracion1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202107221801364_migracion11.resx">
-      <DependentUpon>202107221801364_migracion11.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202107260119031_migracion1.resx">
+      <DependentUpon>202107260119031_migracion1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

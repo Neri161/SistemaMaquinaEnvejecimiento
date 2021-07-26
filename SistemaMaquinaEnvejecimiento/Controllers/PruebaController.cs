@@ -10,6 +10,8 @@ namespace SistemaMaquinaEnvejecimiento.Controllers
 {
     public class PruebaController : ApiController
     {
+        DB bd = new DB();
+
         [ActionName("RegistroPrueba")]
         [HttpPost]
         public Reply RegistroPrueba(Prueba objeto)
@@ -32,6 +34,50 @@ namespace SistemaMaquinaEnvejecimiento.Controllers
                 }
                 return rp;
             }
+        }
+
+        [ActionName("Consulta")]
+        [HttpGet]
+        public IQueryable<PruebaDTO> Consulta()
+        {
+            var consulta = from prueba in bd.Prueba
+                           where prueba.Privacidad == "Publico"
+                           select new PruebaDTO
+                           {
+                               ID = prueba.IdPrueba,
+                               ApellidoPaterno = prueba.Usuario.ApellidoPaterno,
+                               ApellidoMaterno = prueba.Usuario.ApellidoMaterno,
+                               Nombre = prueba.Usuario.Nombre,
+                               FechaInicio = prueba.FechaInicio,
+                               FechaTermino = prueba.FechaTermino,
+                               Material = prueba.Material,
+                               Privacidad = prueba.Privacidad
+                           };
+
+            return consulta;
+
+        }
+
+        [ActionName("ConsultaPorUsuario")]
+        [HttpGet]
+        public IQueryable<PruebaDTO> ConsultaPorUsuario(int id)
+        {
+            var consulta = from prueba in bd.Prueba
+                           where prueba.IdUsuario == id
+                           select new PruebaDTO
+                           {
+                               ID = prueba.IdPrueba,
+                               ApellidoPaterno = prueba.Usuario.ApellidoPaterno,
+                               ApellidoMaterno = prueba.Usuario.ApellidoMaterno,
+                               Nombre = prueba.Usuario.Nombre,
+                               FechaInicio = prueba.FechaInicio,
+                               FechaTermino = prueba.FechaTermino,
+                               Material = prueba.Material,
+                               Privacidad = prueba.Privacidad
+                           };
+
+            return consulta;
+
         }
     }
 }

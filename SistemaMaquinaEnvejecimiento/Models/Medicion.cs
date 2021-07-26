@@ -12,10 +12,21 @@ namespace SistemaMaquinaEnvejecimiento.Models
         public int IdMedicion { get; set; }
         public float Temperatura { get; set; }
         public float Humedad { get; set; }
-        public Boolean EstatusLuz { get; set; }
+        public String EstatusLuz { get; set; }
         public String CicloTrabajo { get; set; }
         public int Fecha { get; set; }
         public int IdPrueba { get; set; }
         public virtual Prueba Prueba { get; set; }
+    }
+    public class MedicionDTO
+    {
+        [Key]
+        public int ID { get; set; }
+        public float Temperatura { get; set; }
+        public float Humedad { get; set; }
+        public String EstatusLuz { get; set; }
+        public String CicloTrabajo { get; set; }
+        public int Fecha { get; set; }
+        public String FechaString { get; set; }
     }
 }

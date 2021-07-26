@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="../public/plugins/animate.css/animate.css">
 
     <link href="../public/css/Style.css" rel="stylesheet" />
+
     <link href="../public/img/Iconos/logo.ico" rel="icon" />
 </head>
 <body>

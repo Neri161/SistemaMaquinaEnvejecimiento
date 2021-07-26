@@ -12,8 +12,7 @@ namespace SistemaMaquinaEnvejecimiento.Controllers
     public class MedicionController : ApiController
     {
 
-        String urlDomain = "http://localhost:54053";
-        herramienta herramientas = new herramienta();
+        DB bd = new DB();
         [ActionName("RegistrarMedicion")]
         [HttpPost]
         public Reply registro(Medicion objeto)
@@ -39,6 +38,25 @@ namespace SistemaMaquinaEnvejecimiento.Controllers
                 }
                 return rp;
             }
+        }
+        [ActionName("ConsultaPorMedicion")]
+        [HttpGet]
+        public IQueryable<MedicionDTO> ConsultaPorUsuario(int id)
+        {
+            var consulta = from medicion in bd.Medicion
+                           where medicion.IdPrueba == id
+                           select new MedicionDTO
+                           {
+                               ID = medicion.IdMedicion,
+                               Temperatura = medicion.Temperatura,
+                               Humedad=medicion.Humedad,
+                               EstatusLuz=medicion.EstatusLuz,
+                               CicloTrabajo=medicion.CicloTrabajo,
+                               Fecha = medicion.Fecha
+                           };
+
+            return consulta;
+
         }
 
 

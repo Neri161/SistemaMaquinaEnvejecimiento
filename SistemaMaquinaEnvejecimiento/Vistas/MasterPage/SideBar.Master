@@ -19,6 +19,14 @@
     <link href="../../public/css/fontawesome.min.css" rel="stylesheet" />
     <link href="../../public/img/Iconos/logo.ico" rel="icon" />
     <link href="../../public/css/bsadmin.css" rel="stylesheet" />
+    <link href="../../public/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <style>
+        @media (max-width:720px) {
+            #lblCorreo {
+                display: none;
+            }
+        }
+    </style>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -26,7 +34,7 @@
     <form id="form1" runat="server">
         <nav class="navbar navbar-expand navbar-light bg-light border" style="border-color: rgb(240,240,240);">
             <a class="sidebar-toggle text-dark mr-3"><i class="fa fa-bars"></i></a>
-            <asp:LinkButton Text="SISTEMA DE MAQUINA DE ENVEJECIMIENTO ACELERADO" ID="btnInicio" Style="text-decoration: none; color: black;" runat="server" OnClick="btnInicio_Click" />
+            <asp:LinkButton Text="SMEA" ID="btnInicio" Style="text-decoration: none; color: black;" runat="server" OnClick="btnInicio_Click" />
             <div class="navbar-collapse collapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item dropdown">
@@ -89,5 +97,8 @@
     <script src="../public/js/bsadmin.js"></script>
     <!--    Plugin sweet Alert 2  -->
     <script src="../public/plugins/sweetAlert2/sweetalert2.all.min.js"></script>
+    <script src="../../public/js/jquery.dataTables.min.js"></script>
+    <script src="../../public/js/pruebasTablas.js"></script>
+
 </body>
 </html>
