@@ -79,5 +79,13 @@ namespace SistemaMaquinaEnvejecimiento.Controllers
             return consulta;
 
         }
+
+        [ActionName("ConsultaPrueba")]
+        [HttpGet]
+        public Prueba ConsultaPrueba()
+        {
+            Prueba consulta = bd.Prueba.OrderByDescending(x => x.IdPrueba).First();
+            return consulta;
+        }
     }
 }

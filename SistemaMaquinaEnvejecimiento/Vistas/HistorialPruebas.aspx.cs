@@ -16,6 +16,9 @@ namespace SistemaMaquinaEnvejecimiento.Vistas
         herramienta herramientas = new herramienta();
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["ID"] == null)
+                Response.Redirect("Login.aspx");
+
             peticion.PedirComunicacion("Prueba/ConsultaPorUsuario/" + Int32.Parse(Session["ID"].ToString()), MetodoHTTP.GET, TipoContenido.JSON);
             String respuesta = peticion.ObtenerJson();
             if (respuesta != null)
@@ -33,16 +36,16 @@ namespace SistemaMaquinaEnvejecimiento.Vistas
                 gvPrueba.DataBind();
             }
         }
-    
 
-    protected void gvPrueba_RowCommand(object sender, GridViewCommandEventArgs e)
-    {
-        if (e.CommandName == "mediciones")
+
+        protected void gvPrueba_RowCommand(object sender, GridViewCommandEventArgs e)
         {
-            int crow = Convert.ToInt32(e.CommandArgument.ToString());
-            string id = gvPrueba.Rows[crow].Cells[0].Text;
-            Response.Redirect("Mediciones.aspx?id=" + id);
+            if (e.CommandName == "mediciones")
+            {
+                int crow = Convert.ToInt32(e.CommandArgument.ToString());
+                string id = gvPrueba.Rows[crow].Cells[0].Text;
+                Response.Redirect("Mediciones.aspx?id=" + id);
+            }
         }
     }
-}
 }

@@ -198,8 +198,8 @@ namespace SistemaMaquinaEnvejecimiento.Controllers
         }
         private void SendEmail(string EmailDestino, string token)
         {
-            String EmailOrigen = "neriesperon2001@gmail.com";
-            String Contraseña = "kdhdnwoanzuascgb";
+            String EmailOrigen = "smeamupt2021@gmail.com";
+            String Contraseña = "pmygazjhycdmotwt";
             string url = urlDomain + "/Vistas/CambioContraseña.aspx?token=" + token;
             MailMessage oMailMessage = new MailMessage(EmailOrigen, EmailDestino, "Recuperación de contraseña",
                 "<p>Correo para recuperación de contraseña</p><br>" +

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Text;
 using HTTPupt;
 using SistemaMaquinaEnvejecimiento.Herramientas;
 using SistemaMaquinaEnvejecimiento.Models;
@@ -16,7 +17,6 @@ namespace SistemaMaquinaEnvejecimiento.Vistas
         herramienta herramientas = new herramienta();
         protected void Page_Load(object sender, EventArgs e)
         {
-
         }
 
         protected void btnIniciar_Click(object sender, EventArgs e)
@@ -41,8 +41,7 @@ namespace SistemaMaquinaEnvejecimiento.Vistas
             }
             else
             {
-                Response.Write("<script>alert('" + consulta.message + "');</script>");
-                //     Response.Redirect("Inicio.aspx");
+                Response.Redirect("HistorialPruebas.aspx");
             }
         }
 

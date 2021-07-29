@@ -8,7 +8,7 @@ namespace SistemaMaquinaEnvejecimiento.Models
     public partial class DB : DbContext
     {
         public DB()
-            : base("name=DB4")
+            : base("name=DB5")
         {
         }
 

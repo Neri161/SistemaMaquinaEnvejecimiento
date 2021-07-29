@@ -16,6 +16,9 @@ namespace SistemaMaquinaEnvejecimiento.Vistas
         herramienta herramientas = new herramienta();
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["ID"] == null)
+                Response.Redirect("Login.aspx");
+
             peticion.PedirComunicacion("Prueba/Consulta", MetodoHTTP.GET, TipoContenido.JSON);
             String respuesta = peticion.ObtenerJson();
             if (respuesta!=null)

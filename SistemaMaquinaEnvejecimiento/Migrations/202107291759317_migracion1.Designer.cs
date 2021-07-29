@@ -13,7 +13,7 @@ namespace SistemaMaquinaEnvejecimiento.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202107192043542_migracion1"; }
+            get { return "202107291759317_migracion1"; }
         }
         
         string IMigrationMetadata.Source

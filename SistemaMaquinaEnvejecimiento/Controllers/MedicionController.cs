@@ -11,7 +11,6 @@ namespace SistemaMaquinaEnvejecimiento.Controllers
 {
     public class MedicionController : ApiController
     {
-
         DB bd = new DB();
         [ActionName("RegistrarMedicion")]
         [HttpPost]
@@ -22,7 +21,6 @@ namespace SistemaMaquinaEnvejecimiento.Controllers
                 Reply rp = new Reply();
                 try
                 {
-
                     for (int i = 0; i < 10; i++)
                     {
                         db.Medicion.Add(objeto);
@@ -54,9 +52,7 @@ namespace SistemaMaquinaEnvejecimiento.Controllers
                                CicloTrabajo=medicion.CicloTrabajo,
                                Fecha = medicion.Fecha
                            };
-
             return consulta;
-
         }
 
 
