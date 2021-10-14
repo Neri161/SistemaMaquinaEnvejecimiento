@@ -50,7 +50,7 @@
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="HTTPupt">
-      <HintPath>..\..\..\..\Librerias\Librerias c#\HTTPupt.dll</HintPath>
+      <HintPath>..\..\..\..\Documents\Nueva carpeta\Librerias\c#\HTTPupt.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Win32.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
